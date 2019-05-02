@@ -24,4 +24,6 @@ fi
 export DISPLAY=:99.0
 util/xvfb-initd.sh start
 
+export MESA_GL_VERSION_OVERRIDE=3.3
+
 test/installation-test.sh

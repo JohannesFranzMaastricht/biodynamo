@@ -34,6 +34,8 @@ echo ${TRAVIS_OS_NAME}
 export DISPLAY=:99.0
 util/xvfb-initd.sh start
 
+export MESA_GL_VERSION_OVERRIDE=3.3
+
 # git describe does not work if last commit tag is not checked out
 git fetch --unshallow || true
 git fetch --tags
